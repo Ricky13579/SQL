@@ -39,7 +39,7 @@ SELECT salary           -- 급여
      , department_id    -- 상사번호
   FROM employees
  WHERE job_id = 'ST_CLERK'
- ORDER BY salary desc, manager_id;
+ ORDER BY salary desc, manager_id asc;
  
 -- 사원테이블에서 입사일을 중복을 없애고 조회
 SELECT DISTINCT hire_Date       -- 입사일(중복 제거)
