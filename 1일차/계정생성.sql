@@ -35,6 +35,18 @@ alter user hr identified by tiger;
 -- 6. +로 접속해서 위 정보를 연결한다.
 /////////////////////////////////////////////////////////
 
+-- 1. 사용자 계정생성 : scott_04 계정생성 .. 1,2,3번
+-- create user <계정이름> identified by <계정암호> default tablespace users;
+create user MADANG identified by tiger default tablespace users;
+
+-- 2. 사용자 권한 부여
+-- grant [시스템 권한] to [계정];
+grant connect, resource, create view, create session to MADANG;
+
+-- 3. 락 해제
+-- alter user <계정이름> account unlock;
+alter user MADANG account unlock;
+
 --  권한취소
 -- revoke [시스템 권한] from [계정];
 -- revoke create view from jdbc;
