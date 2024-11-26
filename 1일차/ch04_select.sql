@@ -22,7 +22,7 @@ SELECT first_name
        , email
        , hire_date
   FROM employees
-  ORDER BY first_name asc, email desc, hire_date desc;
+  ORDER BY first_name, email desc, hire_date desc;
 
 -- 부서코드 오름차순, hire_date 내림차순
 SELECT department_id
