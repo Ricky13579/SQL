@@ -138,7 +138,7 @@ SELECT employee_id 사번
  * LTRIM : 왼쪽 공백 제거
  * RTRIM : 오른쪽 공백 제거
  */
-SELECT '    Oracle maina    '
+SELECT '    Oracle maina   '
     , TRIM('    Oracle mania    ') as trim
     , LTRIM('    Oracle mania    ') as l_trim
     , RTRIM('    Oracle mania    ') as r_trim
