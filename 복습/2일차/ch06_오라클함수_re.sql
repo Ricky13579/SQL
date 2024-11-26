@@ -6,7 +6,7 @@ SELECT employee_id AS "사번"
      , first_name || '-' || last_name AS "이름"
      , RPAD(REPLACE(hire_date,'/','')||'-',14,'*') AS "주민등록번호"
   FROM employees
- ORDER BY employee_id;
+ ORDER BY employee_id ASC;
 
 -- 사원테이블에서 사번, 전화번호를 조회
 -- 전화번호는 (___-____-____)형식으로 조회, 사번 오름차순
