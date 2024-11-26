@@ -188,7 +188,7 @@ SELECT employee_id
      , department_id
      , email
   FROM employees
- WHERE department_id = 10 -- 200	Whalen	4400	10
+ WHERE department_id = 10
  UNION 
 SELECT employee_id
      , last_name
