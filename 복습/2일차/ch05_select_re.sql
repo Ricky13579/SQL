@@ -5,7 +5,7 @@ SELECT employee_id
      , email
   FROM employees
  WHERE salary < 10000
- ORDER BY salary;
+ ORDER BY salary ASC;
  
 -- 급여가 7000에서 8000사이인 사원의 사번, 급여를 조회
 -- 급여 오름차순
